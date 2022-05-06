@@ -40,4 +40,11 @@ public class Transacao {
 
     @Column(length = 19, nullable = false)
     private String nomeLoja;
+
+    public static Transacao parseNote(String line) {
+        String[] text = line.split(",");
+        Transacao t = new Transacao();
+        //t.setDtOcorrencia();
+        return t;
+    }
 }
